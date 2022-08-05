@@ -1,0 +1,5 @@
+<?php
+if ($block->EnableCustomAttribute()) {
+    echo    "<br> Скидка на социальный продукт: " . $block->EnablePercent() . "%<br>" .
+            "Стоимость с учетом скидки: " . $block->DiscountPrice() . "$";
+}

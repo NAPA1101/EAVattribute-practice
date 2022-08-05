@@ -1,0 +1,5 @@
+<?php
+if ($block->getEnableModule() && $block->getOverWeight() > $block->getWeight())
+{
+    echo 'За перевозку ' . $block->getValueAttribute() . ' будет начислена дополнительная оплата ' . $block->getMarkup() . '$';
+}
